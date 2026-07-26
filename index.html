@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj Kumar — Principal Software Consultant &amp; Senior Software Engineer</title>
+  <meta name="description" content="Manoj Kumar is a Principal Software Consultant with 10+ years of experience architecting enterprise platforms, AI/RAG systems, and cloud-native applications in .NET, React, and Azure." />
+  <meta name="author" content="Manoj Kumar" />
+  <meta name="keywords" content="Manoj Kumar, Senior Software Engineer, Principal Software Consultant, .NET Developer, React Developer, Azure, AI Engineer, RAG, Full Stack Developer, Karachi Pakistan" />
+  <meta name="theme-color" content="#0B1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manoj Kumar — Principal Software Consultant &amp; Senior Software Engineer" />
+  <meta property="og:description" content="10+ years building enterprise platforms, AI/RAG systems, and cloud-native applications. Explore experience, projects, and skills." />
+  <meta property="og:image" content="assets/avatar.svg" />
+  <meta property="og:url" content="https://manoj-portfolio-rho.vercel.app" />
+  <meta property="og:site_name" content="Manoj Kumar — Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manoj Kumar — Principal Software Consultant &amp; Senior Software Engineer" />
+  <meta name="twitter:description" content="10+ years building enterprise platforms, AI/RAG systems, and cloud-native applications." />
+  <meta name="twitter:image" content="assets/avatar.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#hero" class="nav-brand" aria-label="Manoj Kumar — home">
+        <span class="brand-mark">MK</span>
+        <span class="brand-name">Manoj Kumar</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-theme">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+            <svg class="icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg class="icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero section-padding" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Manoj Kumar</h1>
+          <p class="hero-title">Principal Software Consultant &amp; Senior Software Engineer</p>
+          <p class="hero-tagline">
+            10+ years architecting enterprise-grade platforms — from AI-powered workflow automation
+            and RAG systems to multi-vendor network security orchestration and core banking software.
+          </p>
+          <p class="hero-intro">
+            I design and build production systems end-to-end: cloud architecture, RESTful &amp; OData APIs,
+            full-stack web applications, and AI/LLM-driven platforms for enterprises in professional
+            services, financial services, and healthcare. Currently at 10Pearls, leading delivery of
+            AI-assisted workflow automation and enterprise knowledge platforms for global clients.
+          </p>
+
+          <div class="hero-actions">
+            <a href="assets/resume.pdf" class="btn btn-primary" download>
+              <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <ul class="hero-socials" aria-label="Social links">
+            <li>
+              <a href="https://github.com/ManojPabani" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.26 5.7.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/manojpabani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:manojpabani@gmail.com" aria-label="Send email">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </li>
+          </ul>
+
+          <dl class="hero-stats">
+            <div class="stat">
+              <dt class="stat-number" data-count="10" data-suffix="+">0</dt>
+              <dd class="stat-label">Years Experience</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-number" data-count="9" data-suffix="+">0</dt>
+              <dd class="stat-label">Enterprise Projects</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-number" data-count="8">0</dt>
+              <dd class="stat-label">Certifications</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual fade-in" aria-hidden="true">
+          <img src="assets/avatar.svg" alt="" class="hero-illustration" width="480" height="480" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section-padding" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">About</p>
+        <h2 id="about-heading" class="section-heading fade-in">Building reliable software for over a decade</h2>
+
+        <div class="about-grid">
+          <div class="about-copy fade-in">
+            <p>
+              I'm a Senior Software Engineer and Principal Software Consultant with 10+ years of professional
+              experience designing and delivering enterprise-grade software — from core banking and hospital
+              ERP systems early in my career to AI-powered workflow automation, retrieval-augmented generation
+              (RAG) platforms, and multi-vendor network security orchestration today.
+            </p>
+            <p>
+              My work spans the full stack: software architecture and system design, backend engineering in
+              .NET, Python, and Node.js, frontend development with React and Angular, RESTful and OData API
+              design, and cloud infrastructure on Microsoft Azure. In recent years I've focused heavily on
+              applied AI — building RAG pipelines, multi-agent orchestration, and LLM-integrated platforms
+              that are grounded, auditable, and enterprise-ready.
+            </p>
+            <p>
+              I care about performance, security, and clean architecture — applying SOLID principles, clean
+              code practices, and pragmatic design patterns — and about the people I work with, whether that
+              means leading a project end-to-end as the sole engineer, mentoring teammates, or collaborating
+              directly with client stakeholders to turn ambiguous requirements into shipped, measurable
+              outcomes.
+            </p>
+          </div>
+
+          <div class="competencies fade-in">
+            <h3 class="competencies-title">Core Competencies</h3>
+            <ul class="competency-list">
+              <li><span class="competency-icon" aria-hidden="true">🏗️</span>Software Architecture &amp; System Design</li>
+              <li><span class="competency-icon" aria-hidden="true">⚙️</span>Backend Development (.NET, Python, Node.js)</li>
+              <li><span class="competency-icon" aria-hidden="true">🖥️</span>Frontend Development (React, Angular)</li>
+              <li><span class="competency-icon" aria-hidden="true">🔌</span>RESTful &amp; OData API Design</li>
+              <li><span class="competency-icon" aria-hidden="true">☁️</span>Cloud &amp; DevOps (Microsoft Azure)</li>
+              <li><span class="competency-icon" aria-hidden="true">🤖</span>AI, LLM &amp; RAG Engineering</li>
+              <li><span class="competency-icon" aria-hidden="true">🚀</span>Performance Optimization</li>
+              <li><span class="competency-icon" aria-hidden="true">🔐</span>Security &amp; Compliance</li>
+              <li><span class="competency-icon" aria-hidden="true">🤝</span>Team Collaboration &amp; Mentoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section-padding alt-bg" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">Skills</p>
+        <h2 id="skills-heading" class="section-heading fade-in">Technologies I work with</h2>
+        <p class="section-subtext fade-in">Drawn from 10+ years across enterprise consulting, core banking, and applied-AI product engineering.</p>
+
+        <div class="skills-groups">
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Programming Languages</h3>
+            <ul class="pill-list">
+              <li class="pill">C#</li><li class="pill">TypeScript</li><li class="pill">JavaScript</li>
+              <li class="pill">Python</li><li class="pill">SQL (T-SQL)</li><li class="pill">HTML5</li>
+              <li class="pill">CSS</li><li class="pill">PowerShell</li><li class="pill">Bicep</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Backend &amp; Frameworks</h3>
+            <ul class="pill-list">
+              <li class="pill">.NET 10 / 8 / Core / Framework</li><li class="pill">ASP.NET Core</li>
+              <li class="pill">ASP.NET MVC</li><li class="pill">ASP.NET Web API</li>
+              <li class="pill">Razor / Razor Pages</li><li class="pill">Entity Framework Core</li>
+              <li class="pill">LINQ</li><li class="pill">WPF</li><li class="pill">FastAPI</li>
+              <li class="pill">LangChain</li><li class="pill">SQLAlchemy (async)</li><li class="pill">Alembic</li>
+              <li class="pill">Node.js 20+</li><li class="pill">Express 5</li><li class="pill">Zod</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="pill-list">
+              <li class="pill">React 19</li><li class="pill">TanStack React Query</li><li class="pill">MUI</li>
+              <li class="pill">Angular 19</li><li class="pill">jQuery</li><li class="pill">AJAX</li>
+              <li class="pill">Bootstrap</li><li class="pill">Tailwind CSS 4</li><li class="pill">JQWidgets</li>
+              <li class="pill">Highcharts</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">AI, LLM &amp; RAG Engineering</h3>
+            <ul class="pill-list">
+              <li class="pill">Retrieval-Augmented Generation</li><li class="pill">Hybrid Dense + BM25 Retrieval</li>
+              <li class="pill">Reciprocal Rank Fusion</li><li class="pill">MMR Diversification</li>
+              <li class="pill">Model Context Protocol (MCP)</li><li class="pill">Anthropic Claude API</li>
+              <li class="pill">Azure OpenAI</li><li class="pill">OpenAI API</li><li class="pill">Voyage AI Embeddings</li>
+              <li class="pill">sentence-transformers</li><li class="pill">FAISS</li>
+              <li class="pill">Multi-Agent Orchestration</li><li class="pill">Prompt Engineering</li>
+              <li class="pill">Streaming Chat (SSE)</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Databases &amp; Caching</h3>
+            <ul class="pill-list">
+              <li class="pill">Microsoft SQL Server</li><li class="pill">PostgreSQL</li><li class="pill">SQLite</li>
+              <li class="pill">Azure SQL</li><li class="pill">Azure Cosmos DB</li><li class="pill">Redis</li>
+              <li class="pill">Distributed / TTL Caching</li><li class="pill">Connection Pooling</li>
+              <li class="pill">Repository Pattern</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Cloud, DevOps &amp; Infrastructure</h3>
+            <ul class="pill-list">
+              <li class="pill">Microsoft Azure</li><li class="pill">Azure Functions</li><li class="pill">Azure DevOps</li>
+              <li class="pill">Azure Service Bus</li><li class="pill">Azure Event Grid</li><li class="pill">Azure Blob Storage</li>
+              <li class="pill">Azure Key Vault</li><li class="pill">Azure API Management</li><li class="pill">Azure Application Insights</li>
+              <li class="pill">Microsoft Entra ID</li><li class="pill">Docker &amp; Docker Compose</li>
+              <li class="pill">Jenkins</li><li class="pill">Git</li><li class="pill">Nginx</li><li class="pill">CI/CD Pipelines</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Architecture &amp; Design</h3>
+            <ul class="pill-list">
+              <li class="pill">Clean Architecture</li><li class="pill">SOLID Principles</li><li class="pill">Design Patterns</li>
+              <li class="pill">Dependency Injection</li><li class="pill">Event-Driven Architecture</li>
+              <li class="pill">Multi-Tenant Architecture</li><li class="pill">OData</li>
+              <li class="pill">RESTful API Design</li><li class="pill">Full-Stack Development</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Security &amp; Identity</h3>
+            <ul class="pill-list">
+              <li class="pill">RBAC / Claims-Based Auth</li><li class="pill">JWT &amp; bcrypt</li>
+              <li class="pill">Row-Level Security</li><li class="pill">ACLs</li>
+              <li class="pill">Compliance Mapping (SOC 2, ISO 27001, NIST, PCI-DSS, HIPAA)</li>
+              <li class="pill">Cisco ASA / NSX-T / Check Point</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">Real-Time, Background &amp; Testing</h3>
+            <ul class="pill-list">
+              <li class="pill">SignalR</li><li class="pill">Azure SignalR</li><li class="pill">Hangfire</li>
+              <li class="pill">Server-Sent Events</li><li class="pill">Firebase Realtime</li>
+              <li class="pill">xUnit</li><li class="pill">pytest</li><li class="pill">Vitest</li>
+              <li class="pill">API Test Automation</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section-padding" aria-labelledby="experience-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">Experience</p>
+        <h2 id="experience-heading" class="section-heading fade-in">Professional Experience</h2>
+
+        <ol class="timeline">
+
+          <li class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="badge-current">Current</span>
+              <h3 class="timeline-role">Principal Software Consultant</h3>
+              <p class="timeline-org">10Pearls · Karachi, Sindh, Pakistan (Hybrid)</p>
+              <p class="timeline-dates">August 2025 – Present</p>
+              <ul class="timeline-highlights">
+                <li>Led design and delivery of an enterprise AI-powered workflow automation and case management platform for a global professional services firm, replacing manual email approvals with a governed, event-driven system.</li>
+                <li>Architected a human-in-the-loop workflow engine enabling AI Units (LLMs, RPA, custom ML) to execute case-review steps with full audit traceability and structured approval gates.</li>
+                <li>Built multi-agent AI orchestration supporting crew-based collaboration, guardrail monitoring, and iterative feedback loops between reviewers and AI agents.</li>
+                <li>Designed an enterprise GPT-powered conversational platform on Azure OpenAI with a RAG pipeline (Azure AI Search) grounding responses in internal knowledge bases with source citation.</li>
+                <li>Engineered scalable Azure OpenAI integration via API Management with load balancing, plus persistent chat history and automated data-retention pipelines on Cosmos DB.</li>
+              </ul>
+              <ul class="tech-badges">
+                <li>React</li><li>ASP.NET Core (.NET 10)</li><li>Azure OpenAI</li><li>Cosmos DB</li><li>Azure SQL</li><li>Redis</li><li>Azure AD</li><li>SignalR</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Staff Software Engineer</h3>
+              <p class="timeline-org">10Pearls · Karachi, Sindh, Pakistan (On-site)</p>
+              <p class="timeline-dates">January 2021 – August 2025</p>
+              <ul class="timeline-highlights">
+                <li>Architected an enterprise-grade multi-vendor network security policy orchestration platform (.NET 10, Angular 19, PostgreSQL), unifying 9+ vendor integrations into a single normalized policy model.</li>
+                <li>Designed a complexity-aware rule optimization engine detecting shadowed and redundant firewall rules, with automatic algorithm switching to keep analysis tractable across thousands of rules.</li>
+                <li>Built a compliance scoring engine mapping automated checks to SOC 2, ISO 27001, NIST 800-53, PCI-DSS, and HIPAA, turning manual quarterly audits into generated, evidence-backed reports.</li>
+                <li>Delivered the platform as a fully air-gapped appliance for zero-internet-egress environments, with signed patch bundles for offline updates.</li>
+                <li>Implemented claims-based RBAC, database-per-tenant multi-tenancy, and a 4-tier licensing model gating capability from a single build.</li>
+                <li>Developed a real-time asset tracking and visualization portal on ServiceNow, exposing REST APIs for a downstream mobile team.</li>
+              </ul>
+              <ul class="tech-badges">
+                <li>.NET 10</li><li>ASP.NET Core</li><li>Angular 19</li><li>TypeScript</li><li>PostgreSQL</li><li>SignalR</li><li>Hangfire</li><li>ServiceNow</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Software Engineer</h3>
+              <p class="timeline-org">10Pearls · Karachi, Sindh, Pakistan</p>
+              <p class="timeline-dates">March 2018 – December 2020</p>
+              <ul class="timeline-highlights">
+                <li>Developed and maintained the Networking Appliances Management System, an enterprise platform enabling customers to manage network objects — routers, switches, load balancers, VMs, security groups, and distributed firewalls.</li>
+                <li>Delivered full-stack features using ASP.NET MVC, Razor Pages, JavaScript, and PostgreSQL with a clean, responsive UI and robust backend logic.</li>
+                <li>Built reusable validation helpers and AJAX wrappers adopted as standard across the codebase, reducing duplication and speeding up feature delivery.</li>
+                <li>Worked independently without dedicated QA or PM support, owning the full development lifecycle from requirements to deployment.</li>
+              </ul>
+              <ul class="tech-badges">
+                <li>ASP.NET MVC</li><li>Razor</li><li>Entity Framework</li><li>JavaScript</li><li>jQuery</li><li>PostgreSQL</li><li>Bootstrap</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Software Engineer</h3>
+              <p class="timeline-org">Avanza Solutions · Pakistan</p>
+              <p class="timeline-dates">August 2016 – March 2018</p>
+              <ul class="timeline-highlights">
+                <li>Led end-to-end development of the Indus Hospital ERP system, creating a fully paperless environment that significantly improved hospital efficiency and data management.</li>
+                <li>Engineered core banking solutions, including fraud detection and card management systems, enhancing security and streamlining financial operations.</li>
+                <li>Architected web applications using .NET Core, MVC, and Entity Framework, adhering to industry standards for performance, scalability, and security.</li>
+                <li>Optimized data access and application performance via repository patterns and efficient SQL/LINQ queries.</li>
+              </ul>
+              <ul class="tech-badges">
+                <li>.NET Core</li><li>ASP.NET MVC</li><li>Entity Framework</li><li>SQL Server</li><li>LINQ</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Software Engineer</h3>
+              <p class="timeline-org">Mexyon Private Limited · Pakistan (On-site)</p>
+              <p class="timeline-dates">March 2016 – August 2016</p>
+              <ul class="timeline-highlights">
+                <li>Led end-to-end development of a web-based Islamic Banking solution, building the application from scratch.</li>
+                <li>Gathered and refined product requirements in direct collaboration with business stakeholders.</li>
+                <li>Designed and implemented system architecture using C#, ASP.NET MVC, Bootstrap, jQuery, and JavaScript.</li>
+                <li>Provided technical leadership, guiding the product through its full lifecycle to a scalable, secure, user-friendly delivery.</li>
+              </ul>
+              <ul class="tech-badges">
+                <li>C#</li><li>ASP.NET MVC</li><li>Bootstrap</li><li>jQuery</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <h3 class="timeline-role">Software Engineer</h3>
+              <p class="timeline-org">Agilosoft (On-site)</p>
+              <p class="timeline-dates">August 2015 – February 2016</p>
+              <ul class="timeline-highlights">
+                <li>Collected and analyzed client requirements during meetings to ensure accurate understanding of business needs.</li>
+                <li>Designed implementation plans and secured client approvals before development.</li>
+                <li>Developed and implemented solutions using C#, .NET Framework, ASP.NET MVC, WPF, and SQL Server.</li>
+                <li>Participated in alpha testing to validate changes and ensure high-quality delivery.</li>
+              </ul>
+              <ul class="tech-badges">
+                <li>C#</li><li>.NET Framework</li><li>ASP.NET MVC</li><li>WPF</li><li>SQL Server</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section-padding alt-bg" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">Projects</p>
+        <h2 id="projects-heading" class="section-heading fade-in">Featured Projects</h2>
+        <p class="section-subtext fade-in">Independent, open-source builds exploring applied AI, RAG, and developer tooling.</p>
+
+        <div class="project-grid featured-grid">
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+            </div>
+            <h3 class="project-title">MCP SQL Console</h3>
+            <p class="project-desc">A natural-language-to-SQL console and Model Context Protocol server that lets developers and AI tools (Cursor, Claude Desktop) query Microsoft SQL Server safely — in plain English or raw SQL — without hand-writing joins.</p>
+            <ul class="project-features">
+              <li>Local-first NL→SQL pipeline with LLM fallback and escalation heuristics</li>
+              <li>Heuristic query planner inferring multi-hop join paths purely from live schema metadata</li>
+              <li>3-tier TTL caching and in-flight request de-duplication for performance</li>
+              <li>Uniform read-only SQL guardrails across console, REST API, and MCP tools</li>
+            </ul>
+            <ul class="tech-badges">
+              <li>TypeScript</li><li>Node.js</li><li>React 19</li><li>Express 5</li><li>MS SQL Server</li><li>MCP SDK</li><li>OpenAI API</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/ManojPabani/mcp-sql-console" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.26 5.7.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="project-title">IntelliRAG</h3>
+            <p class="project-desc">An enterprise-grade Retrieval-Augmented Generation assistant with a ChatGPT-like UX, letting users chat over their own uploaded documents with cited, streaming AI answers.</p>
+            <ul class="project-features">
+              <li>Hybrid dense (Voyage) + BM25 retrieval fused via Reciprocal Rank Fusion, diversified with MMR</li>
+              <li>Claude-powered streaming chat over Server-Sent Events</li>
+              <li>Secure, user-scoped JWT authentication with per-user document ownership</li>
+              <li>Dockerized deployment with Nginx reverse proxy and health checks</li>
+            </ul>
+            <ul class="tech-badges">
+              <li>Python</li><li>TypeScript</li><li>FastAPI</li><li>React 19</li><li>LangChain</li><li>Anthropic Claude API</li><li>Voyage AI</li><li>Docker</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/ManojPabani/IntelliRAG" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.26 5.7.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="subsection-heading fade-in">Enterprise &amp; Client Projects</h3>
+        <p class="section-subtext fade-in">Delivered for enterprise clients under confidentiality — source unavailable, tech stack and impact shown below.</p>
+
+        <div class="project-grid">
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="project-title">AI Workflow Automation &amp; Case Management Platform</h3>
+            <p class="project-desc">Event-driven workflow engine governing multi-party business review processes for a global professional services firm, with human-in-the-loop AI approval gates and full audit traceability.</p>
+            <ul class="tech-badges">
+              <li>C#</li><li>ASP.NET Core</li><li>OData</li><li>SignalR</li><li>Azure Service Bus</li><li>Event Grid</li><li>Redis</li><li>Azure AD</li>
+            </ul>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="project-title">AI-Powered Internal Knowledge &amp; Productivity Platform</h3>
+            <p class="project-desc">Persona-driven conversational AI workspace with RAG-grounded knowledge search, OCR document analysis, and brand-compliant report generation for a global professional services firm.</p>
+            <ul class="tech-badges">
+              <li>C#</li><li>.NET 8</li><li>React</li><li>Azure OpenAI</li><li>Azure AI Search</li><li>Cosmos DB</li><li>Azure Functions</li>
+            </ul>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="project-title">Multi-Vendor Network Security Policy Orchestration Platform</h3>
+            <p class="project-desc">Air-gapped enterprise platform unifying multi-vendor firewall management (Cisco, VMware NSX-T, Check Point, Cilium) into one console with rule cleanup, compliance reporting, and migration analysis.</p>
+            <ul class="tech-badges">
+              <li>.NET 10</li><li>Angular 19</li><li>PostgreSQL</li><li>Hangfire</li><li>SignalR</li><li>Multi-Tenant</li>
+            </ul>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2v10l7 4"/></svg>
+            </div>
+            <h3 class="project-title">Field Data Reporting Solution for Tracking Deployed Assets</h3>
+            <p class="project-desc">Customized ServiceNow portal for real-time monitoring, location tracking, and activity visualization of deployed field assets, integrated with mobile apps via REST APIs.</p>
+            <ul class="tech-badges">
+              <li>ServiceNow</li><li>JavaScript</li><li>Business Rules</li><li>REST APIs</li><li>Highcharts</li>
+            </ul>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            </div>
+            <h3 class="project-title">Opportunity Tracking &amp; Bid Awarding Platform</h3>
+            <p class="project-desc">Cross-platform system helping companies track and act on business opportunities in real time, with native Android/iOS apps and Firebase-powered push notifications.</p>
+            <ul class="tech-badges">
+              <li>.NET Core</li><li>Angular</li><li>Node.js</li><li>Firebase</li><li>Cosmos DB</li><li>Android</li><li>iOS</li>
+            </ul>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M6 14h4"/></svg>
+            </div>
+            <h3 class="project-title">Networking Appliances Management System</h3>
+            <p class="project-desc">Enterprise web application for creating and managing network objects — routers, switches, load balancers, and firewalls — on the fly through a centralized interface.</p>
+            <ul class="tech-badges">
+              <li>ASP.NET MVC</li><li>.NET Core</li><li>Razor</li><li>Entity Framework</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/></svg>
+            </div>
+            <h3 class="project-title">Hospital ERP Solution — HRMS Module</h3>
+            <p class="project-desc">Web-based ERP system for a well-renowned hospital, focused on the HRMS module, with a custom front-end framework built on jQuery and JQWidgets.</p>
+            <ul class="tech-badges">
+              <li>ASP.NET Web API</li><li>jQuery</li><li>JQWidgets</li><li>Entity Framework</li><li>SQL Server</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section-padding" aria-labelledby="education-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">Education</p>
+        <h2 id="education-heading" class="section-heading fade-in">Academic Background</h2>
+
+        <div class="education-list">
+
+          <article class="education-card fade-in">
+            <div class="education-main">
+              <h3 class="education-degree">Master of Science, Computer Science</h3>
+              <p class="education-school">Muhammad Ali Jinnah University</p>
+              <p class="education-detail">Focus on Deep Learning and Information Retrieval Techniques, with coursework in Analysis of Algorithms and Data &amp; Information Management.</p>
+            </div>
+            <div class="education-meta">
+              <span class="education-duration">Aug 2021 – May 2023</span>
+            </div>
+          </article>
+
+          <article class="education-card fade-in">
+            <div class="education-main">
+              <h3 class="education-degree">Bachelor of Science, Computer Science</h3>
+              <p class="education-school">National University of Computer and Emerging Sciences</p>
+              <p class="education-detail">Coursework in Data Structures &amp; Algorithms, OOP, Software Engineering, Database Management Systems, Operating Systems, Computer Networks, and Artificial Intelligence. Final year project: full-stack web application built with .NET and SQL Server.</p>
+            </div>
+            <div class="education-meta">
+              <span class="education-duration">2011 – 2015</span>
+            </div>
+          </article>
+
+          <article class="education-card fade-in">
+            <div class="education-main">
+              <h3 class="education-degree">Post Graduate Diploma, Entrepreneurship &amp; SME Management</h3>
+              <p class="education-school">Virtual University of Pakistan</p>
+              <p class="education-detail">One-year program covering entrepreneurship and small-to-medium enterprise management fundamentals.</p>
+            </div>
+            <div class="education-meta">
+              <span class="education-duration">Aug 2018 – Oct 2019</span>
+            </div>
+          </article>
+
+          <article class="education-card fade-in">
+            <div class="education-main">
+              <h3 class="education-degree">Intermediate, Pre-Engineering</h3>
+              <p class="education-school">Adamjee Government Science College</p>
+            </div>
+            <div class="education-meta">
+              <span class="education-duration">2009 – 2011</span>
+            </div>
+          </article>
+
+          <article class="education-card fade-in">
+            <div class="education-main">
+              <h3 class="education-degree">Matriculation, Science</h3>
+              <p class="education-school">Sindh Madressatul Islam University</p>
+            </div>
+            <div class="education-meta">
+              <span class="education-duration">2007 – 2009</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section-padding alt-bg" aria-labelledby="certifications-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">Certifications</p>
+        <h2 id="certifications-heading" class="section-heading fade-in">Licenses &amp; Certifications</h2>
+
+        <div class="cert-grid">
+
+          <a class="cert-card fade-in" href="https://verify.skilljar.com/c/vbocmspk7ugm" target="_blank" rel="noopener noreferrer" aria-label="View credential: Introduction to Agent Skills">
+            <h3 class="cert-title">Introduction to Agent Skills</h3>
+            <p class="cert-issuer">Anthropic</p>
+            <p class="cert-date">Issued June 2026</p>
+            <p class="cert-id">Credential ID: vBocmspk7ugm</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://verify.skilljar.com/c/jqbzwxlvng3" target="_blank" rel="noopener noreferrer" aria-label="View credential: Introduction to Model Context Protocol">
+            <h3 class="cert-title">Introduction to Model Context Protocol</h3>
+            <p class="cert-issuer">Anthropic</p>
+            <p class="cert-date">Issued June 2026</p>
+            <p class="cert-id">Credential ID: jqBzwxlvng3</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://verify.skilljar.com/c/cdehms94tu7c" target="_blank" rel="noopener noreferrer" aria-label="View credential: Claude Code in Action">
+            <h3 class="cert-title">Claude Code in Action</h3>
+            <p class="cert-issuer">Anthropic</p>
+            <p class="cert-date">Issued March 2026</p>
+            <p class="cert-id">Credential ID: cdehms94tu7c</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://www.coursera.org/account/accomplishments/verify/9JXBMXP5TZGZ" target="_blank" rel="noopener noreferrer" aria-label="View credential: Multiplatform Mobile App Development with Web Technologies">
+            <h3 class="cert-title">Multiplatform Mobile App Development with Web Technologies</h3>
+            <p class="cert-issuer">Coursera Course Certificates</p>
+            <p class="cert-date">Issued October 2016</p>
+            <p class="cert-id">Credential ID: 9JXBMXP5TZGZ</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://www.coursera.org/account/accomplishments/verify/ZSDPTNTJGF5J" target="_blank" rel="noopener noreferrer" aria-label="View credential: Server-side Development with NodeJS">
+            <h3 class="cert-title">Server-side Development with NodeJS</h3>
+            <p class="cert-issuer">Coursera Course Certificates</p>
+            <p class="cert-date">Issued October 2016</p>
+            <p class="cert-id">Credential ID: ZSDPTNTJGF5J</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://www.coursera.org/account/accomplishments/verify/JC4HLD4H43WS" target="_blank" rel="noopener noreferrer" aria-label="View credential: Front-End JavaScript Frameworks: AngularJS">
+            <h3 class="cert-title">Front-End JavaScript Frameworks: AngularJS</h3>
+            <p class="cert-issuer">Coursera Course Certificates</p>
+            <p class="cert-date">Issued September 2016</p>
+            <p class="cert-id">Credential ID: JC4HLD4H43WS</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://www.coursera.org/account/accomplishments/verify/U3W933JHF5QS" target="_blank" rel="noopener noreferrer" aria-label="View credential: Front-End Web UI Frameworks and Tools">
+            <h3 class="cert-title">Front-End Web UI Frameworks and Tools</h3>
+            <p class="cert-issuer">Coursera Course Certificates</p>
+            <p class="cert-date">Issued August 2016</p>
+            <p class="cert-id">Credential ID: U3W933JHF5QS</p>
+          </a>
+
+          <a class="cert-card fade-in" href="https://www.coursera.org/account/accomplishments/verify/W6SUFMUM3HKE" target="_blank" rel="noopener noreferrer" aria-label="View credential: HTML, CSS and JavaScript">
+            <h3 class="cert-title">HTML, CSS and JavaScript</h3>
+            <p class="cert-issuer">Coursera Course Certificates</p>
+            <p class="cert-date">Issued June 2016</p>
+            <p class="cert-id">Credential ID: W6SUFMUM3HKE</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section-padding" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-eyebrow fade-in">Contact</p>
+        <h2 id="contact-heading" class="section-heading fade-in">Let's Connect</h2>
+        <p class="section-subtext fade-in">
+          Open to Principal / Staff Engineer roles, technical consulting, and interesting AI-engineering
+          collaborations. Reach out — I usually reply within a day.
+        </p>
+
+        <div class="contact-grid">
+          <ul class="contact-list fade-in">
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:manojpabani@gmail.com" class="contact-value">manojpabani@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" data-copy="manojpabani@gmail.com" aria-label="Copy email address">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span class="copy-btn-text">Copy</span>
+              </button>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+923332211275" class="contact-value">+92 333 2211275</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.26 5.7.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              </span>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/ManojPabani" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/ManojPabani</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+              </span>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/manojpabani/" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/manojpabani</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <div>
+                <span class="contact-label">Portfolio</span>
+                <a href="https://manoj-portfolio-rho.vercel.app" target="_blank" rel="noopener noreferrer" class="contact-value">manoj-portfolio-rho.vercel.app</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Karachi, Sindh, Pakistan</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-cta fade-in">
+            <h3>Ready to build something reliable?</h3>
+            <p>Whether it's a full platform, an AI/RAG integration, or an architecture review — I'd love to hear about it.</p>
+            <a href="mailto:manojpabani@gmail.com" class="btn btn-primary">Say Hello</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="currentYear"></span> Manoj Kumar. All rights reserved.</p>
+      <ul class="footer-socials" aria-label="Social links">
+        <li><a href="https://github.com/ManojPabani" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/manojpabani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:manojpabani@gmail.com" aria-label="Email">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
