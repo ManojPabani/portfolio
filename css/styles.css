@@ -547,6 +547,12 @@ input:focus-visible {
 }
 .timeline-role { font-size: 1.25rem; margin-bottom: 4px; }
 .timeline-org { color: var(--secondary); font-weight: 600; font-size: 0.95rem; }
+.timeline-org a {
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.timeline-org a:hover { color: var(--primary); border-bottom-color: var(--primary); }
 .timeline-dates { color: var(--muted); font-size: 0.85rem; margin-top: 2px; margin-bottom: 18px; }
 .timeline-highlights { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
 .timeline-highlights li {
@@ -661,7 +667,28 @@ input:focus-visible {
 .education-card:hover { border-color: color-mix(in srgb, var(--primary) 30%, var(--border)); }
 .education-degree { font-size: 1.1rem; margin-bottom: 6px; }
 .education-school { color: var(--secondary); font-weight: 600; font-size: 0.92rem; margin-bottom: 10px; }
+.education-school a {
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.education-school a:hover { color: var(--primary); border-bottom-color: var(--primary); }
 .education-detail { color: var(--muted); font-size: 0.9rem; max-width: 640px; }
+.education-cert-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+  padding: 7px 13px;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+.education-cert-btn:hover { background: color-mix(in srgb, var(--primary) 10%, transparent); transform: translateY(-1px); }
 .education-meta { flex-shrink: 0; text-align: right; }
 .education-duration {
   display: inline-block;
@@ -678,25 +705,91 @@ input:focus-visible {
 /* ---------- 13. Certifications ---------- */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 .cert-card {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 26px;
+  padding: 28px;
   box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-base), border-color var(--transition-base);
-  border-top: 3px solid var(--primary);
-  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
-.cert-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--primary) 30%, var(--border)); }
-.cert-title { font-size: 1.02rem; margin-bottom: 8px; line-height: 1.4; }
-.cert-issuer { color: var(--secondary); font-weight: 600; font-size: 0.88rem; margin-bottom: 4px; }
-.cert-date { color: var(--muted); font-size: 0.85rem; margin-bottom: 4px; }
-.cert-id { color: var(--muted); font-size: 0.78rem; font-family: 'SFMono-Regular', Consolas, monospace; }
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+.cert-badge-new {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 6px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--gradient-primary);
+  padding: 3px 9px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.cert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.cert-monogram {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+.cert-monogram--anthropic { background: var(--gradient-primary); color: #fff; }
+.cert-monogram--coursera {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: #0056D2;
+}
+.cert-header-text { min-width: 0; }
+.cert-title { font-size: 1.02rem; margin-bottom: 5px; line-height: 1.4; }
+.cert-issuer { color: var(--secondary); font-weight: 600; font-size: 0.85rem; }
+
+.cert-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.cert-id { font-family: 'SFMono-Regular', Consolas, monospace; }
+
+.cert-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color var(--transition-fast);
+}
+.cert-verify svg { transition: transform var(--transition-fast); }
+.cert-card:hover .cert-verify { color: var(--primary); }
+.cert-card:hover .cert-verify svg { transform: translate(2px, -2px); }
 
 /* ---------- 14. Contact ---------- */
 .contact-grid {
@@ -781,6 +874,51 @@ a.contact-value:hover { color: var(--primary); }
 }
 .footer-socials a:hover { color: var(--primary); }
 
+/* ---------- 16b. Certificate Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(3, 7, 18, 0.86);
+  backdrop-filter: blur(6px);
+  animation: lightbox-fade 200ms ease;
+}
+.lightbox[hidden] { display: none; }
+@keyframes lightbox-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.lightbox-img {
+  max-width: min(900px, 100%);
+  max-height: 88vh;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  background: #fff;
+}
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color var(--transition-fast);
+}
+.lightbox-close:hover { background: rgba(255, 255, 255, 0.22); }
+@media (prefers-reduced-motion: reduce) {
+  .lightbox { animation: none; }
+}
+
 /* ---------- 16. Scroll to Top ---------- */
 .scroll-top-btn {
   position: fixed;
@@ -853,7 +991,8 @@ a.contact-value:hover { color: var(--primary); }
 /* ---------- 18. Print Styles ---------- */
 @media print {
   .site-header, .scroll-progress, .scroll-top-btn, .scroll-cue,
-  .hero-visual, .theme-toggle, .nav-toggle, .btn, .copy-btn, .site-footer { display: none !important; }
+  .hero-visual, .theme-toggle, .nav-toggle, .btn, .copy-btn, .site-footer,
+  .education-cert-btn, .lightbox { display: none !important; }
   body { background: #fff; color: #0B1220; }
   .section-padding { padding-block: 24px; }
   .card, .timeline-card, .project-card, .cert-card, .education-card, .skill-group, .competencies, .contact-cta {

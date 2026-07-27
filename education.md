@@ -1,6 +1,7 @@
 # Education
 
 ## National University of Computer and Emerging Sciences
+- **University URL:** https://www.nu.edu.pk/
 - **Degree:** Bachelor of Science (BS), Computer Science
 - **Duration:** 2011 – 2015
 - **Details:** Bachelor of Science in Computer Science from one of Pakistan's top-ranked technology institutions.
@@ -10,6 +11,7 @@
 - **Attachment:** Graduation degree.pdf
 
 ## Muhammad Ali Jinnah University
+- **University URL:** https://jinnah.edu/
 - **Degree:** Master of Science in Computer Science
 - **Duration:** Aug 2021 – May 2023
 - **Details:** Master of Science in Computer Science with a focus on Deep Learning and Information Retrieval Techniques. Coursework provided a solid foundation in core concepts such as Analysis of Algorithms and Data and Information Management, leveraging these skills to develop innovative and efficient solutions.
@@ -17,6 +19,7 @@
 - **Attachment:** Masters Degree.pdf
 
 ## Virtual University of Pakistan
+- **University URL:** https://vu.edu.pk/
 - **Degree:** Post Graduate Diploma in Entrepreneurship & SME Management
 - **Duration:** Aug 2018 – Oct 2019
 - **Details:** A one-year program that provided a comprehensive understanding of entrepreneurship and small to medium enterprise (SME) management.

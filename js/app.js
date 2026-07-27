@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollToTop();
   initCopyEmail();
   initFooterYear();
+  initCertLightbox();
 });
 
 /* ---------- Theme toggle with localStorage persistence ---------- */
@@ -206,4 +207,45 @@ function initCopyEmail() {
 function initFooterYear() {
   const el = document.getElementById('currentYear');
   if (el) el.textContent = new Date().getFullYear();
+}
+
+/* ---------- Degree certificate lightbox ---------- */
+function initCertLightbox() {
+  const triggers = document.querySelectorAll('.education-cert-btn');
+  const lightbox = document.getElementById('certLightbox');
+  if (!triggers.length || !lightbox) return;
+
+  const img = document.getElementById('lightboxImg');
+  const closeBtn = document.getElementById('lightboxClose');
+  let lastFocused = null;
+
+  const open = (trigger) => {
+    lastFocused = trigger;
+    img.src = trigger.getAttribute('data-cert-src');
+    img.alt = trigger.getAttribute('data-cert-alt') || 'Degree certificate';
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  };
+
+  const close = () => {
+    lightbox.hidden = true;
+    img.src = '';
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  };
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => open(trigger));
+  });
+
+  closeBtn.addEventListener('click', close);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) close();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !lightbox.hidden) close();
+  });
 }
