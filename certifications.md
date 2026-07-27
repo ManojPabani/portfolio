@@ -35,7 +35,7 @@
 ## Multiplatform Mobile App Development with Web Technologies
 - **Issuer:** Coursera Course Certificates
 - **Issued:** October 2016
-- **Credential ID:** 9JXBMXP5TZGZ
+- **Credential ID:** 9JXBMXP57ZGZ
 
 ## HTML, CSS and JavaScript
 - **Issuer:** Coursera Course Certificates
@@ -55,4 +55,4 @@
 ## Front-End Web UI Frameworks and Tools
 - **Issuer:** Coursera Course Certificates
 - **Issued:** August 2016
-- **Credential ID:** U3W933JHF5QS
+- **Credential ID:** U3W933JHFSQS
