@@ -48,7 +48,7 @@
   - Worked independently without a dedicated QA or PM, taking full ownership of the development lifecycle from requirements to deployment.
   - **Tech:** ASP.NET MVC, Razor, Entity Framework, JavaScript, jQuery, PostgreSQL, HTML5, Bootstrap, CSS
 
-## Software Engineer *(title not visible in source screenshot)*
+## Senior Software Engineer *(title not visible in source screenshot)*
 - **Organization:** 10Pearls ([10pearls.com](https://10pearls.com/))
 - **Location:** Karāchi, Sindh, Pakistan (Hybrid)
 - **Employment Type:** Full-time
