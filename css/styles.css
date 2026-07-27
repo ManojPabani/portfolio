@@ -258,8 +258,8 @@ input:focus-visible {
 .theme-toggle {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 10px;
   border: 1px solid var(--border);
   color: var(--text);
@@ -275,8 +275,8 @@ input:focus-visible {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
 }
 .nav-toggle-bar {
@@ -775,6 +775,7 @@ input:focus-visible {
   color: var(--muted);
   padding-top: 16px;
   border-top: 1px solid var(--border);
+  margin-top: auto;
 }
 .cert-id { font-family: 'SFMono-Regular', Consolas, monospace; }
 
